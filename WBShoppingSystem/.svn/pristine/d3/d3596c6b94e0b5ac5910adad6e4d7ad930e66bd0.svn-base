@@ -1,0 +1,157 @@
+package edu.shopsys.DAO.Impl;
+
+import java.sql.SQLException;
+
+import java.util.ArrayList;
+import java.util.List;
+import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.ResultSetHandler;
+import org.apache.commons.dbutils.handlers.BeanListHandler;
+import edu.shopsys.DAO.UserDAO;
+import edu.shopsys.model.Goods;
+import edu.shopsys.model.GoodsOrder;
+import edu.shopsys.model.ShippingAddress;
+import edu.shopsys.model.User;
+import edu.shopsys.service.UserService;
+import edu.shopsys.util.C3p0Utils;
+
+public class UserDAOImpl implements UserDAO {
+
+    @Override
+    public Boolean login(int account, String pwd) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public Boolean register(User user) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public UserService queryInfo(int userID) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public Boolean updataInfo(User user) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public Boolean modifypwd(int userID, String pwd) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public Boolean reSetPwd(int userID, String email) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public Boolean addShippingAddress(ShippingAddress sa) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public Boolean modifyShippingAddress(ShippingAddress sa) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public Boolean addGood() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public List<GoodsOrder> queryOrder() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public List<GoodsOrder> queryOrder(String oerderstate) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    // 按类别查询商品
+    @Override
+    public List<Goods> queryByclass(String type) {
+        QueryRunner run = new QueryRunner(C3p0Utils.getDS());
+        BeanListHandler<Goods> handler = new BeanListHandler<Goods>(Goods.class);
+        List<Goods> list = new ArrayList<Goods>();
+        String sql = "SELECT * FROM T_GOODS WHERE goods_type LIKE ?";
+        try {
+            list = run.query(sql, handler, "%" + type + "%");
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return list;
+    }
+
+    // 关键词查询商品
+    @Override
+    public List<Goods> queryByKeyword(String keyWord) {
+        QueryRunner run = new QueryRunner(C3p0Utils.getDS());
+        BeanListHandler<Goods> handler = new BeanListHandler<Goods>(Goods.class);
+        List<Goods> list = new ArrayList<Goods>();
+        String sql = "SELECT * FROM T_GOODS " + "WHERE goods_name LIKE ?" + "OR goods_type LIKE ?"
+                + "OR goods_price LIKE ?" + "OR goods_info LIKE ?" + "OR goods_brand LIKE ?";
+        try {
+            list = run.query(sql, handler, "%" + keyWord + "%", "%" + keyWord + "%",
+                    "%" + keyWord + "%", "%" + keyWord + "%", "%" + keyWord + "%");
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return list;
+    }
+
+    @Override
+    public List<Goods> queryByNo() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public Boolean addToShopCar(int Goods_ID, int count) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    //生成订单
+    @Override
+    public Boolean addGoodOrder(GoodsOrder goodsorder) {
+        // TODO Auto-generated method stub
+    	QueryRunner run = new QueryRunner(C3p0Utils.getDS());
+		ResultSetHandler<List<GoodsOrder>> h = new BeanListHandler<GoodsOrder>(GoodsOrder.class);
+		String sql="INSERT INTO T_ORDER SET ORDER_ID=?,ORDER_TIME=?,ORDER_PAY=?,ORDER_GOODS_ID=?,ORDER_ADDRESS_ID=?,ORDER_STATE=?,ORDER_USER_ID=?";
+		Object[] params = {goodsorder.getOrder_id(),goodsorder.getOrder_time(),goodsorder.getOrder_pay(),goodsorder.getOrder_id(),goodsorder.getOrder_address_id(),goodsorder.getOrder_state(),goodsorder.getOrder_user_id()};
+		try {
+			run.update(sql, params);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return false;
+		}
+        return true;
+    }
+    
+    public static void main(String[] args) {
+		GoodsOrder goodsorder=new GoodsOrder("00000004","2018-08-18","微信","00000002","0002","已付款","00000000002");
+		UserDAOImpl ud=new UserDAOImpl();
+		System.out.println(ud.addGoodOrder(goodsorder));
+		
+    }
+
+}

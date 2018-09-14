@@ -1,0 +1,23 @@
+//分享代码
+var shareid="fenxiang";
+(function(){var a={version:"1.0",build:"1ce010bc1f412fd202df4c0b28b9f380",url:function(){return encodeURIComponent(window.location.href)},title:function(){return encodeURIComponent(window.document.title)},content:function(b){if(b){return encodeURIComponent($("#"+b).html())}else{return""}},setid:function(){if(typeof(shareid)=="undefined"){return null}else{return shareid}},kaixin:function(){window.open("http://www.kaixin001.com/repaste/share.php?rtitle="+this.title()+"&rurl="+this.url()+"&rcontent="+this.content(this.setid()))},renren:function(){window.open("http://share.renren.com/share/buttonshare.do?link="+this.url()+"&title="+this.title())},sinaminiblog:function(){window.open("http://v.t.sina.com.cn/share/share.php?url="+this.url()+"&title="+this.title()+"&content=utf-8&source=&sourceUrl=&pic=")},baidusoucang:function(){window.open("http://cang.baidu.com/do/add?it="+this.title()+"&iu="+this.url()+"&dc="+this.content(this.setid())+"&fr=ien#nw=1")},qqshuqian:function(){window.open("http://shuqian.qq.com/post?from=3&title="+this.title()+"&uri="+this.url()+"&jumpback=2&noui=1")},
+gugesghuqian:function(){window.open("http://www.google.com/bookmarks/mark?op=edit&output=popup&bkmk="+this.url()+"&title="+this.title())},
+taojianghu:function(){window.open("http://share.jianghu.taobao.com/share/addShare.htm?title="+this.title()+"&url="+this.url()+"&content=" +this.content(this.setid()))},
+sinashoucang:function(){window.open("http://vivi.sina.com.cn/collect/icollect.php?title="+this.title()+"&url="+this.url()+"&desc=" +this.content(this.setid()))},
+wangyi:function(){window.open("http://t.163.com/article/user/checkLogin.do?source=%E7%BD%91%E6%98%93%E6%96%B0%E9%97%BB%20%20%20&link="+this.url()+"&info=" +this.content(this.setid()))},
+qqzone:function(){window.open("http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url="+this.url()+"&title="+this.title())},
+douban:function(){window.open("http://www.douban.com/recommend/?url="+this.url()+"&title="+this.title()+"&v=1")},baishehui:function(){window.open("http://bai.sohu.com/share/blank/addbutton.do?from=fengyin&link="+this.url()+"&title="+this.title())}};window.share=a})();
+jQuery(function(){
+$(".share .icon_01").click(function(){share.renren();});
+$(".share .icon_02").click(function(){share.kaixin();});
+$(".share .icon_03").click(function(){share.douban();});
+$(".share .icon_04").click(function(){share.qqshuqian();});
+$(".xinlangs,.xinlang").click(function(){share.sinaminiblog();});
+$(".baishehui").click(function(){share.baishehui();});
+$(".taojianghu").click(function(){share.taojianghu();});
+$(".sinashoucang").click(function(){share.sinashoucang();});
+$(".wangyi").click(function(){share.wangyi();});
+$(".qqzone").click(function(){share.qqzone();});
+$(".baidusoucang").click(function(){share.baidusoucang();});
+$(".gugesghuqian").click(function(){share.gugesghuqian();});
+});

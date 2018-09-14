@@ -1,0 +1,112 @@
+package edu.shopsys.service.impl;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import edu.shopsys.DAO.AdminDAO;
+import edu.shopsys.DAO.Impl.AdminDAOImpl;
+import edu.shopsys.model.Goods;
+import edu.shopsys.model.GoodsOrder;
+import edu.shopsys.model.User;
+import edu.shopsys.service.AdminService;
+
+public class AdminServiceImpl implements AdminService{
+
+	@Override
+	public Boolean login(int userID, String pwd) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Goods> queryGoods() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Goods> queryGoods(String GoodType) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean addGoods(Goods goods) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean dedelteGoods(int goodsId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean stopGoods(int goodsId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean modifyGoodsInfo(Goods goods) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<GoodsOrder> queryByOrderID(int orderID, int page) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean setOrderState(int orderID, String orderState) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Long> countsUserOrder() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<GoodsOrder> countGoodsOrder() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<GoodsOrder> countGoodsOrderByState(String orderState) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<GoodsOrder> countGoodsOrdeByIDr(int orderID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Long> counts() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<User> queryUser() throws SQLException {
+		AdminDAO adao = new AdminDAOImpl();
+		// TODO Auto-generated method stub
+		return adao.queryUser();
+	}
+
+	@Override
+	public List<User> queryUser(int user_ID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

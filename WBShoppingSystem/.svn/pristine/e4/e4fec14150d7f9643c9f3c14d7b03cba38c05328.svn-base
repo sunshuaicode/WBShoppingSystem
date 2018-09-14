@@ -1,0 +1,31 @@
+﻿/* ColorItem style */
+.ColorItem .ColorWK input {border: 1px solid #000;width:10px;height:10px;overflow:hidden;}
+.div_1 {background-color:#000;}
+.div_2{background-color:#fff;}
+.div_3{background-color:#808080;}
+.div_4{background-color:#c0c0c0;}
+.div_5{background-color:#fffff0;}
+.div_6{background-color:#cbdcee;}
+.div_7{background-color:#5575a4;}
+.div_8{background-color:#16163a;}
+.div_9{background-color:#00ffff;}
+.div_10{background-color:#f0cad5;}
+.div_11{background-color:#ff0000;}
+.div_12{background-color:#a40b39;}
+.div_13{background-color:#91e0cd;}
+.div_14{background-color:#17abab;}
+.div_15{background-color:#003300;}
+.div_16{background-color:#e7e183;}
+.div_17{background-color:#ffff99;}
+.div_18{background-color:#ff8c00;}
+.div_19{background-color:#ffd700;}
+.div_20{background-color:#993300;}
+.div_21{background-color:#800080;}
+.ColorItem{width:350px; float:left; height:30px;}
+.ColorItem .ColorControl{float:left; width:25px; *width:15px; padding-top:2px;padding-left:3px;height:30px;*padding-top:0px;}
+.ColorItem .ColorFont{float:left; width:30px;padding-top:2px;*padding-top:4px; *padding-left:8px;}
+.ColorItem .ColorWK{float:left; width:15px;padding-top:2px;padding-left:3px;padding-right:20px;}
+/* TypeItem style */
+.TypeItem{width:300px; float:left; height:30px;  color:black;}
+.TypeItem .TypeControl{float:left; width:25px; *width:15px;padding-top:2px;padding-left:3px;*padding-top:0px;}
+.TypeItem .TypeFont {float:left; width:83px;padding-top:2px;*padding-top:3px; *padding-left:10px;}

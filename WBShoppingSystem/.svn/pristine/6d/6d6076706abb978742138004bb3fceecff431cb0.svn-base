@@ -1,0 +1,59 @@
+package edu.shopsys.controller;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import edu.shopsys.model.GoodsOrder;
+import edu.shopsys.service.UserService;
+import edu.shopsys.service.impl.UserServiceImpl;
+
+/**
+ * Servlet implementation class UserController
+ */
+@WebServlet("/UserController")
+public class UserController extends HttpServlet {
+    private static final long serialVersionUID = 1L;
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+    	doPost(request, response);
+        System.out.println("doGetUser");
+    }
+
+    /**
+     * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+     */
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        System.out.println("doPostUser");
+    	String method=request.getParameter("method");
+    	if ("addGoodOrder".equals(method)) {
+    		addGoodOrder(request,response);
+		}
+    }
+
+    //生成订单
+	private void addGoodOrder(HttpServletRequest request, HttpServletResponse response) {
+		// TODO Auto-generated method stub
+		System.out.println("addGoodOrder");
+		//从请求中获取各项参数值
+		String oi=request.getParameter("order_id");
+		String ot=request.getParameter("order_time");
+		String op=request.getParameter("order_pay");
+		String ogi=request.getParameter("order_goods_id");
+		String oai=request.getParameter("order_address_id");
+		String os=request.getParameter("order_state");
+		String oui=request.getParameter("order_user-id");
+		//将以上数据封装成GoodsOrder对象
+		GoodsOrder goodsorder=new GoodsOrder(oi,ot,op,ogi,oai,os,oui);
+		UserService us=new UserServiceImpl();
+		//调用服务层方法
+		us.addGoodOrder(goodsorder);
+	}
+
+}

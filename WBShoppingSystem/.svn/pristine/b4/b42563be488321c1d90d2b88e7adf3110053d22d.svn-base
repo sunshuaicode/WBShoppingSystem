@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* contain */
+.with {padding:10px; background:#f3f3f3;}
+/* contain left */
+.list_l { border:solid 1px #e0e0e0; width:775px; background:#fff; padding:5px;}
+.list_l h2 { font-size:16px; font-family:"微软雅黑","黑体"; font-weight:lighter; text-indent:10px; color:#ff6600; padding-bottom:5px;}
+.list { padding:10px;}
+.list li { border-bottom:dashed 1px #e0e0e0; padding-bottom:10px; margin-bottom:10px;}
+.pic_l { width:102px;}
+.pic_r { width:641px;}
+.pic_r dl dt { height:30px;}
+.pic_r dl dt a {font-size:14px; font-weight:bold;font-family:"微软雅黑","黑体";}
+.pic_r dl dt a:hover , .pic_r dl dd a:hover { color:#ff6600; text-decoration:underline;}
+.pic_r dl dd { line-height:22px;}
+.pic_r dl dd a { font-size:12px;}
+
+.list_page { text-align:center; padding-bottom:10px;}
+.list_page a { padding:0 6px;  border:solid 1px #e0e0e0; background:#fff; display:inline-block; font-family:Arial, Helvetica, sans-serif; font-weight:bold; margin-right:5px;}
+.list_page a:hover , .list_page a.cur { background:#990000; color:#fff; text-decoration:none;}	
+
+.list_main h1 { font-size:18px; font-family:"微软雅黑","黑体"; font-weight:lighter; text-align:center; color:#990000; padding-bottom:5px; padding:10px 0 20px 0; position:relative;}	
+.list_main h1 .more { position:absolute; top:10px; right:30px; color:#dfdfdf; font-size:12px; font-family:"宋体"}
+.list_main h1 .more a {color:#dfdfdf;}
+.list_main .center_pic { text-align:center; margin:10px 0;}
+.list_main dl { margin:10px 80px;}
+.list_main dl dt { font-size:14px; font-weight:bold; text-align:left; padding:10px 0 20px 0;}
+.list_main dl dd { text-indent:2em; line-height:24px; margin-bottom:10px;}
+
+/* contain right */	
+.list_r { border:solid 1px #e0e0e0; width:164px; background:#fff;}	
+.list_r h2 {font-size:14px; color:#fff; background:#5f1835; line-height:24px; border:solid 1px #fff; text-indent:10px;}	
+.product_list { padding:5px 5px 0 5px;}
+.product_list li { border-bottom:dashed 1px #e0e0e0; text-align:center; margin-bottom:10px;}
+.product_list li span { display:block; padding:2px 0;}
+.product_list li span em { font-style:normal; text-decoration:line-through;}

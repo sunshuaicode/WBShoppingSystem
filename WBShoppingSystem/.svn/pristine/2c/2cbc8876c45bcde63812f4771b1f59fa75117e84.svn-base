@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* discount */
+@font-face {
+  font-family: 'iconfont';  /* project id 806491 */
+  src: url('//at.alicdn.com/t/font_806491_qrdslstavap.eot');
+  src: url('//at.alicdn.com/t/font_806491_qrdslstavap.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_806491_qrdslstavap.woff') format('woff'),
+  url('//at.alicdn.com/t/font_806491_qrdslstavap.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_806491_qrdslstavap.svg#iconfont') format('svg');
+}}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+.discount-btn,.discount-btn li,.discount-btn li a{background-image:url(../images/discount-tab.png);background-repeat:no-repeat;}
+.discount{border:solid 1px #f7d3af;margin-top:10px;}
+.discount-btn{height:33px;_overflow:hidden;background-position:0 0;background-repeat:repeat-x;padding:0 10px 0 15px;border-bottom:solid 2px #990000;}
+.discount-btn li{float:left;height:33px;margin:0 10px 0 0;padding-right:10px;display:inline;background-position:100% -73px;}
+.discount-btn li a{width:94px;display:block;height:33px;line-height:33px;overflow:hidden;text-align:center;font-size:14px;color:#990000;}
+.discount-btn li a:hover{text-decoration:none;}
+.discount-btn li a b{font-size:22px;margin-right:5px;}
+.discount-btn li a.current{background-position:0 -33px;height:37px;line-height:37px;position:relative;top:-4px;color:#fff;}
+.discount-btn li a.current b{color:#fff77a;}
+.discount-btn li.last{float:right;padding:0;margin:0;background:none;line-height:33px;}
+.discount-con{padding:5px 8px;}
+/* modpic */
+.modpic li{float:left;padding:5px;margin:5px 0;display:inline;width:150px;text-align:center;cursor:pointer;}
+.modpic li img {margin-bottom:5px;}
+.modpic li .p-name,.modpic li .p-price{height:24px;line-height:24px;}
+.modpic li .p-price{color:#999;}
+.modpic li .p-price strong {font-family:Arial;color:#f70400;font-size:16px;}
+.modpic li .exchange{height:56px;overflow:hidden;background-image:url(../images/or-bg.gif);background-position:0 50%;background-repeat:no-repeat;line-height:28px;text-align:right;color:#5e5e5e;}
+.modpic li .exchange .coin{margin:0 4px 0 0;color:#ff0000;}
+.modpic li.hover .p-name a {color:#fff;}
+.modpic li.hover .p-price strong {color:#fff77a;}
+.modpic li.hover{background-color:#990000;}
+.modpic li.hover .exchange{color:#ccc;}
+.modpic li.hover .exchange .coin{color:#fff77a;}

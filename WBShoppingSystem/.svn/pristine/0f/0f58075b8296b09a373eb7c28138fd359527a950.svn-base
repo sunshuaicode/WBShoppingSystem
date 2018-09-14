@@ -1,0 +1,14 @@
+﻿/* productinfo */
+.fc02 {width:250px;height:208px;font-size:12px;background-color:#FFFFFF;color:#333333;border:1px solid #777777;z-index:9;padding:0px;margin:0px;text-align:left;line-height:18px;}
+.ico{height:25px;position:absolute; z-index:10;width:12px;float:left;top:20px;background-image:url(../images/jt.gif);}
+.fc03{width:200px;height:60px;background-color:#FFFFFF;font-size:12px;color:#999999;border:1px solid #777777;z-index:9;padding-top:25px;}
+.Pdname{padding:10px;font-size:16px;font-weight:bold;}
+.PdcateName{color:#990000;}
+.Pdcate{border-bottom:1px dotted #FF714D;margin-left:10px;margin-right:10px;padding-bottom:5px;}
+.PdBrief{margin-left:10px;margin-right:10px;padding-top:10px;padding-bottom:10px;border-bottom:1px dotted #FF714D;font-size:14px;overflow:hidden;height:46px;}
+.PdComments{padding:10px;font-size:14px;color:#990000;}
+.PdCommentsNumber{color:#990000;font-weight:bold;}
+.PdCommentsDetail{padding:0px 10px 10px 10px;}
+#imgICO_cyjj{margin-left:15px;}
+#detail_cyjj{margin-left:15px;}
+.sub_01{color:#666666;font-size:12px;}

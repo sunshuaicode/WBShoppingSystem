@@ -1,0 +1,121 @@
+package edu.shopsys.DAO.Impl;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import javax.sql.DataSource;
+
+import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.BeanListHandler;
+
+import edu.shopsys.DAO.AdminDAO;
+import edu.shopsys.model.Goods;
+import edu.shopsys.model.GoodsOrder;
+import edu.shopsys.model.User;
+import edu.shopsys.util.C3p0Utils;
+
+public class AdminDAOImpl implements AdminDAO{
+
+	@Override
+	public Boolean login(int userID, String pwd) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Goods> queryGoods() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Goods> queryGoods(String GoodType) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean addGoods(Goods goods) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean dedelteGoods(int goodsId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean stopGoods(int goodsId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean modifyGoodsInfo(Goods goods) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<GoodsOrder> queryByOrderID(int orderID, int page) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean setOrderState(int orderID, String orderState) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Long> countsUserOrder() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<GoodsOrder> countGoodsOrder() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<GoodsOrder> countGoodsOrderByState(String orderState) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<GoodsOrder> countGoodsOrdeByIDr(int orderID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Long> counts() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<User> queryUser() throws SQLException {
+		DataSource dataSource = C3p0Utils.getDS();//使用连接池
+	      QueryRunner queryRunner = null;//声明查询类
+	      queryRunner = new QueryRunner(dataSource);//获取查询对象
+	      String sql = "select * from T_USER";
+	      BeanListHandler<User> beanListHandler = new BeanListHandler<>(User.class);// 创建Bean列表处理器
+	      List<User> users = queryRunner.query(sql, beanListHandler);   // 执行查询
+		// TODO Auto-generated method stub
+		return users;
+	}
+
+	@Override
+	public List<User> queryUser(int user_ID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,63 @@
+package edu.shopsys.service;
+
+import java.util.List;
+import edu.shopsys.model.Goods;
+import edu.shopsys.model.GoodsOrder;
+import edu.shopsys.model.ShippingAddress;
+import edu.shopsys.model.User;
+
+public interface UserService {
+    int access = 0;
+    int isfalse = -1;
+
+    // 用户登录
+    Boolean login(int account, String pwd);
+
+    // 游客注册
+    Boolean register(User user);
+
+    // 查询个人信息
+    UserService queryInfo(int userID);
+
+    // 修改个人信息
+    Boolean updataInfo(User user);
+
+    // 修改密码
+    Boolean modifypwd(int userID, String pwd);
+
+    // 重置密码
+    Boolean reSetPwd(int userID, String email);
+
+    // 添加收货地址
+    Boolean addShippingAddress(ShippingAddress sa);
+
+    // 修改收货地址
+    Boolean modifyShippingAddress(ShippingAddress sa);
+
+    // 添加商品ﳵ
+    Boolean addGood();
+
+    // 查询我的订单
+    List<GoodsOrder> queryOrder();
+
+    // 按状态查询我的订单
+    List<GoodsOrder> queryOrder(String oerderstate);
+
+    // 按商品类别查询商品
+    List<Goods> queryByclass(String type);
+
+    // 按关键词查询商品
+    List<Goods> queryByKeyword(String keyWord);
+
+    // 首页推荐商品
+    List<Goods> queryByNo();
+
+    // 商品加入购物车 商品id,数量
+    Boolean addToShopCar(int Goods_ID, int count);
+
+    // 生成订单
+    Boolean addGoodOrder(GoodsOrder goodsorder);
+
+
+
+}

@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* help */
+.content .title , .content_bg , .c_l dl dd a , .c_l dl dd a span{background-image:url(../images/help_bg.png);background-repeat:no-repeat;}
+.content .title {background-position:0px 0px; height:37px; line-height:37px; font-size:14px; text-indent:14px; font-weight:bold;}
+.content_bg {background-position:0px -47px; height:20px;}
+.content_main { border-left:solid 1px #e2e2e2;border-right:solid 1px #e2e2e2; height:auto;}
+/* c_l */
+.c_l {width:145px;padding:10px 0px;}
+.c_l dl dt { height:28px; line-height:28px; font-weight:bold; text-indent:15px;}
+.c_l dl dd {height:22px; margin-left:20px; margin-right:20px; text-align:center;}
+.c_l dl dd a {display:block;height:19px;line-height:19px;padding-left:3px;overflow:hidden;background-position:0 -91px;}
+.c_l dl dd a span {height:19px;padding-right:3px;display:block;background-position:100% -91px;cursor:pointer;}
+.c_l dl dd a:hover {background-position:0px -110px;color:#fff;text-decoration:none;}
+.c_l dl dd a:hover span {background-position:100% -110px;}
+.c_l dl dd .current,.c_l dl dd .current:hover{background-position:0px -72px;color:#fff;font-weight:bold;}
+.c_l dl dd .current span,.c_l dl dd .current:hover span{background-position:100% -72px;}
+/* c_r */
+.c_r {width:820px;padding-left:10px;border-left:solid 1px #ffe8e8;margin:10px 0px;}
+.help_r_t { margin:0px 10px; border-bottom:solid 1px #aca899;}
+.help_r_t dl dt { color:#990000; font-weight:bold; font-size:14px; text-indent:8px; padding-bottom:5px;}
+.help_r_t dl dd { float:left; margin:0px 8px; padding:40px 0px 8px 0px; display:inline; font-size:14px;}
+.help_r_t dl dd a { color:#0000ff; text-decoration:none; display:block;}
+.help_r_t dl dd a:hover { color:#0000ff; text-decoration:underline;}
+.help_r_t_m { padding:10px 80px 0px 20px;}
+.help_r_t_m .a-c{text-align:center;}
+.help_r_t_m table td {padding:0 10px;}
+.help_r_t_m p { padding:9px 0px;}
+.help_r_t_m dl dt { line-height:28px; font-size:14px; font-weight:bold; margin:10px 0px;}
+.help_r_t_m dl dd {line-height:24px;padding-left:20px;}
+.list-table,.list-table td{border:solid 1px #999;}
+/* reference */
+.reference{width:180px;border:solid 1px #e4e4e4;padding:10px;background-color:#f9f9f9;}
+.reference li{border-bottom:dashed 1px #ddd;float:left;width:180px;}
+.reference li a{height:32px;line-height:32px;display:block;padding-left:24px;background-image:url(../images/arrow-red.png);background-repeat:no-repeat;color:#666;}
+.reference li a{background-position:5px -36px;*background-position:5px -38px;}
+.reference li a.current{background-position:5px 1px;*background-position:5px -1px;color:#333;font-weight:800;}
+.reference li a:hover{background-position:5px 1px;*background-position:5px -1px;text-decoration:none;color:#990000;}
+.reference li.last{border:none;}
+.reference-con{width:721px;border:solid 1px #e4e4e4;padding:10px 18px 30px 18px;background-color:#f9f9f9;}
+.reference-con .tit{font-size:24px;font-family:"微软雅黑","黑体";font-weight:400;text-align:center;line-height:38px;height:38px;padding:10px 0 20px 0;}
+.reference-con h3{margin-bottom:15px;margin-top:50px;}
+.reference-con h3.tit01{margin-bottom:15px;margin-top:30px;height:24px;margin-left:13px;}
+.reference-con p{line-height:24px;text-indent:2em;}
+.reference-con p a{color:#666;}
+/* links */
+.link_tit{ color:#005aa0;height:36px;clear:both;padding-left:13px;padding-top:5px}
+.link_list{padding:0 9px 40px 9px;}
+.link_list li{padding-left:28px;float:left;width:16%;height:26px;line-height:26px; background:url(../images/links_10.gif) no-repeat 18px 50%;border-bottom:1px dotted #ddd; white-space:nowrap; overflow:hidden}
+.link_step{margin-left:27px;float:left;width:320px;margin-right:24px}
+.link_step li{margin-bottom:15px;width:100%;line-height:22px}
+.margin_l_12{margin-left:12px}
+.w247{width:245px;padding:1px; border:1px solid #7f9db9;height:18px}
+.w247h60{width:245px;padding:1px; border:1px solid #7f9db9;height:60px}
+.link_button{background:url(../images/links_button.gif) no-repeat;width:76px;height:24px;border:none;cursor:pointer;}
+.link_table td{padding:5px 0;}
+.mar-left{margin-left:15px;}
+.mar-left dt{font-size:12px;height:25px;font-weight:800;}
+.mar-left dd{line-height:28px;margin-bottom:10px;}
+.hrtext{ border-bottom:1px dotted #CCC;display:block;clear:both;zoom:1;padding:0 0 15px 0;margin-left:12px;margin-bottom:20px;}
+.hrtext dt{font-size:14px;font-weight:bold;line-height:28px;}
+.hrtext dd{float:left; width:225px; text-indent:15px; height:20px; line-height:20px;}
+.hrtext dd a{color:#3366cc;}

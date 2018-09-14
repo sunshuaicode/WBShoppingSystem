@@ -1,0 +1,118 @@
+package edu.shopsys.service.impl;
+
+import java.util.ArrayList;
+import java.util.List;
+import edu.shopsys.DAO.UserDAO;
+import edu.shopsys.DAO.Impl.UserDAOImpl;
+import edu.shopsys.model.Goods;
+import edu.shopsys.model.GoodsOrder;
+import edu.shopsys.model.ShippingAddress;
+import edu.shopsys.model.User;
+import edu.shopsys.service.UserService;
+
+public class UserServiceImpl implements UserService {
+
+    @Override
+    public Boolean login(int account, String pwd) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public Boolean register(User user) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public UserService queryInfo(int userID) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public Boolean updataInfo(User user) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public Boolean modifypwd(int userID, String pwd) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public Boolean reSetPwd(int userID, String email) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public Boolean addShippingAddress(ShippingAddress sa) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public Boolean modifyShippingAddress(ShippingAddress sa) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public Boolean addGood() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public List<GoodsOrder> queryOrder() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public List<GoodsOrder> queryOrder(String oerderstate) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public List<Goods> queryByclass(String type) {
+        UserDAO dao = new UserDAOImpl();
+        List<Goods> list = new ArrayList<Goods>();
+        list = dao.queryByclass(type);
+        return list;
+    }
+
+    @Override
+    public List<Goods> queryByKeyword(String keyWord) {
+        UserDAO dao = new UserDAOImpl();
+        List<Goods> list = new ArrayList<Goods>();
+        list = dao.queryByKeyword(keyWord);
+        return list;
+    }
+
+    @Override
+    public List<Goods> queryByNo() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public Boolean addToShopCar(int Goods_ID, int count) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    //生成订单
+    @Override
+    public Boolean addGoodOrder(GoodsOrder goodsorder) {
+        // TODO Auto-generated method stub
+    	UserDAO dao = new UserDAOImpl();
+    	//调用dao层方法，并返回boolean值，true生成成功，false生成失败
+        return dao.addGoodOrder(goodsorder);
+    }
+
+}

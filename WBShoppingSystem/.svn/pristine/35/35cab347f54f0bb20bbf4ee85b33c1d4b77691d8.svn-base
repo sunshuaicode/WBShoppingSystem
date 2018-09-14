@@ -1,0 +1,66 @@
+package edu.shopsys.DAO;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import edu.shopsys.model.Goods;
+import edu.shopsys.model.GoodsOrder;
+import edu.shopsys.model.User;
+
+public interface AdminDAO {
+
+		//管理员登录
+		Boolean login(int userID,String pwd);
+	    
+	    //查询商品
+		List<Goods> queryGoods();
+		
+		//查询商品,按 商品类别
+		List<Goods> queryGoods(String GoodType);
+		
+		//上架商品
+		Boolean addGoods(Goods goods);
+		
+		//下架商品
+		Boolean dedelteGoods(int goodsId);
+		
+		//ͣ停用商品
+		Boolean stopGoods(int goodsId);
+		
+		//修改商品信息
+		Boolean modifyGoodsInfo(Goods goods);
+		
+		//按编号查询订单信息
+		List<GoodsOrder> queryByOrderID(int orderID,int page);
+		
+		//设置订单状态̬
+		Boolean setOrderState(int orderID,String orderState);
+		
+		//统计总用户数，订单总数，总交易总金额（订单表）
+		List<Long>  countsUserOrder();
+		
+		//订单统计
+		List<GoodsOrder> countGoodsOrder();
+		
+		//订单统计,按订单状态
+		List<GoodsOrder> countGoodsOrderByState(String orderState);
+		
+		//订单统计,按订单ID
+		List<GoodsOrder> countGoodsOrdeByIDr(int orderID);
+		
+		//交易信息查询，总交易金额，总订单数量，已完成订单数量，交易失败订单数量
+		List<Long> counts();
+		
+		//查询所有会员信息
+		List<User> queryUser() throws SQLException;
+		
+		//查询所有会员信息ByID
+		List<User> queryUser(int user_ID);
+		
+		
+		
+		
+		
+		
+		
+}

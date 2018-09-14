@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="order by dede58.com"/>
+<title>积分兑换_会员积分_网上购物麦路客</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+<link href="../css/base.css" rel="stylesheet" type="text/css" />
+<link href="../css/info.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/public.js"></script>
+</head>
+<body>
+<div class="side_con">
+	<div class="l_m">
+		<div class="f_l l_m_l">
+			您好，欢迎来麦路客商城！<a href="../login.html" class="huise">[登录]</a><a href="../register.html" class="huise">[免费注册]</a>
+		</div><!--l_m_l end-->
+		<div class="f_r l_m_r">
+			<ul class="clearfix">
+				<li class="collect"><a onclick="bookmark();" href="javascript:void(0);">加入收藏</a></li>
+				<li><a href="index.html">帮助中心</a></li>
+				<li><a href="../my-order.html" class="yellow">我的订单</a></li>
+				<li class="my-mesaer">
+					<a href="../my-mesaer.html">我的麦路客<span class="arrow"></span></a>
+					<ul id="my-list">
+						<li><a href="../my-order.html">我的订单</a></li>
+						<li><a href="../my-faq.html">我的问答</a></li>
+						<li><a href="../my-favorites.html">我的收藏</a></li>
+						<li><a href="../my-points.html">我的积分</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div><!--l_m_r end-->
+	</div><!--l_m end-->
+</div><!--side_con end-->
+<div class="header container">
+	<div class="l_s">
+		<a class="f_l logo" href="index.html"><img src="../images/logo.gif" alt="麦路客商城" width="152" height="71" /></a>
+		<div class="f_l l_s_l">
+			<form method="post" action="" id="ui_element">
+				<div class="f_l input_l"><input type="text" id="birds" class="sb_input text" value="" autocomplete="off" onkeydown="javascript:if(event.keyCode==13) search('key');"><ul id="tieslide"></ul></div>
+				<div class="f_l input_r"><button type="submit" onclick="search('key');return false;">搜商品</button></div>
+			</form>
+		</div><!--l_s_l end-->
+		<ul class="f_r l_s_r">
+			<li class="icon_01"><a href="payment.html">货到付款</a></li><li class="icon_02"><a href="payment.html">支付宝支付</a></li><li class="icon_03"><a href="policy.html">7天退换</a></li><li class="icon_04"><a href="invoice-system.html">提供发票</a></li>
+		</ul><!--l_s_r end-->
+	</div><!--l_s end-->
+	<div class="site-nav">
+		<div class="floor_nav">
+			<ul class="floors">
+				<li id="floor_0"><a href="../index.html" class="track">首页</a></li>
+				<li id="floor_1"><a href="../airplane.html" class="track">飞机模型</a></li>
+				<li id="floor_2"><a href="../women.html" class="track">女装</a></li>
+				<li id="floor_3"><a href="../man.html" class="track">男装</a></li>
+				<li id="floor_4"><a href="../shoes.html" class="track">鞋子</a></li>
+				<li id="floor_5"><a href="../bags.html" class="track">箱包</a></li>
+				<li id="floor_6"><a href="../discount.html" class="track">折扣积分</a></li>
+				<li id="floor_7"><a href="../sort.html" class="track">所有分类</a></li>
+			</ul>
+			<div class="buy_cart">
+				<a class="gocart" href="../cart.html">购物车<b class="yellow">312310</b>件</a>
+				<a class="gopay" href="../not-address.html">去结账</a>
+			</div>
+		</div><!--floor_nav end-->
+		<div class="sub-floor-menus">
+			<div class="menu" id="sub_floor_1">
+				<div class="meun_sort">
+					<div class="sort clearfix">
+						<ul class="f_l sort_nav">
+							<li>
+								<dl>
+									<dt><a href="#">垂直 ></a></dt>
+									<dd><span><a href="#">直升机</a></span></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">滑跑 ></a></dt>
+									<dd><span><a href="#">滑翔机</a></span><span><a href="#">三角翼</a></span><span><a href="#">仿真机</a></span><span><a href="#">战斗机</a></span><span><a href="#">旋翼机</a></span></dd>
+								</dl>
+							</li>
+						</ul><!--sort_nav end-->
+						<div class="f_l sort_pp">
+							<h3>热门品牌</h3>
+							<ul>
+								<li><a href="#">JACKJONES</a><a href="#">九牧王</a><a href="#">七匹狼</a><a href="#">马克华菲</a><a href="#">稻草人</a><a href="#">TONYJEANS</a><a href="#">凡诺</a></li>
+							</ul>
+							<div class="blank10"></div>
+							<h3>新品推荐</h3>
+							<p align="center"><a href="#"><img src="../images/polo.jpg" width="135" height="137" alt="美素活悦弹力系列" /></a></p>
+						</div><!--sort_pp end-->
+					</div><!--sort end-->
+				</div><!--meun_sort end-->		
+			</div><!--sub_floor_1 end-->
+			<div class="menu" id="sub_floor_2">
+				<div class="meun_sort">
+					<div class="sort clearfix">
+						<ul class="f_l sort_nav">
+							<li>
+								<dl>
+									<dt><a href="#">上装 ></a></dt>
+									<dd><span><a href="#">T恤</a></span><span><a href="#">背心</a></span><span><a href="#">长袖</a></span><span><a href="#">衬衫</a></span><span><a href="#">棉毛衫</a></span><span><a href="#">雪纺纱</a></span><span><a href="#">吊带衫</a></span><span><a href="#">针织衫</a></span><span><a href="#">毛衣</a></span><span><a href="#">风衣</a></span><span><a href="#">马甲</a></span><span><a href="#">大衣</a></span><span><a href="#">羽绒服</a></span></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">下装 ></a></dt>
+									<dd><span><a href="#">牛仔裤</a></span><span><a href="#">休闲裤</a></span><span><a href="#">短裤</a></span><span><a href="#">运动裤</a></span><span><a href="#">裤子</a></span></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">裙子 ></a></dt>
+									<dd><span><a href="#">连衣裙</a></span><span><a href="#">半身裙</a></span></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">袜子 ></a></dt>
+									<dd><span><a href="#">丝袜</a></span><span><a href="#">短袜</a></span><span><a href="#">长袜</a></span></dd>
+								</dl>
+							</li>
+						</ul><!--sort_nav end-->
+						<div class="f_l sort_pp">
+							<h3>热门品牌</h3>
+							<ul>
+								<li><a href="#">JACKJONES</a><a href="#">九牧王</a><a href="#">七匹狼</a><a href="#">马克华菲</a><a href="#">稻草人</a><a href="#">TONYJEANS</a><a href="#">凡诺</a></li>
+							</ul>
+							<div class="blank10"></div>
+							<h3>新品推荐</h3>
+							<p align="center"><a href="#"><img src="../images/polo.jpg" width="135" height="137" alt="美素活悦弹力系列" /></a></p>
+						</div><!--sort_pp end-->
+					</div><!--sort end-->
+				</div><!--meun_sort end-->	
+			</div><!--sub_floor_2 end-->
+			<div class="menu" id="sub_floor_3">
+				<div class="meun_sort">
+					<div class="sort clearfix">
+						<ul class="f_l sort_nav">
+							<li>
+								<dl>
+									<dt><a href="#">上装 ></a></dt>
+									<dd><span><a href="#">T恤</a></span><span><a href="#">背心</a></span><span><a href="#">长袖</a></span><span><a href="#">衬衫</a></span><span><a href="#">棉毛衫</a></span><span><a href="#">针织衫</a></span><span><a href="#">毛衣</a></span><span><a href="#">马甲</a></span><span><a href="#">大衣</a></span><span><a href="#">羽绒服</a></span></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">下装 ></a></dt>
+									<dd><span><a href="#">牛仔裤</a></span><span><a href="#">休闲裤</a></span><span><a href="#">短裤</a></span><span><a href="#">运动裤</a></span><span><a href="#">裤子</a></span></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">袜子 ></a></dt>
+									<dd><span><a href="#">短袜</a></span><span><a href="#">长袜</a></span></dd>
+								</dl>
+							</li>
+						</ul><!--sort_nav end-->
+						<div class="f_l sort_pp">
+							<h3>热门品牌</h3>
+							<ul>
+								<li><a href="#">JACKJONES</a><a href="#">九牧王</a><a href="#">七匹狼</a><a href="#">马克华菲</a><a href="#">稻草人</a><a href="#">TONYJEANS</a><a href="#">凡诺</a></li>
+							</ul>
+							<div class="blank10"></div>
+							<h3>新品推荐</h3>
+							<p align="center"><a href="#"><img src="../images/polo.jpg" width="135" height="137" alt="美素活悦弹力系列" /></a></p>
+						</div><!--sort_pp end-->
+					</div><!--sort end-->
+				</div><!--meun_sort end-->	
+			</div><!--sub_floor_3 end-->
+			<div class="menu" id="sub_floor_4">
+				<div class="meun_sort">
+					<div class="sort clearfix">
+						<ul class="f_l sort_nav">
+							<li>
+								<dl>
+									<dt><a href="#">男鞋 ></a></dt>
+									<dd><span><a href="#">凉鞋</a></span><span><a href="#">单鞋</a></span><span><a href="#">家居鞋</a></span><span><a href="#">休闲鞋</a></span><span><a href="#">运动鞋</a></span></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">女鞋 ></a></dt>
+									<dd><span><a href="#">凉鞋</a></span><span><a href="#">单鞋</a></span><span><a href="#">高跟鞋</a></span><span><a href="#">靴子</a></span><span><a href="#">家居鞋</a></span><span><a href="#">休闲鞋</a></span><span><a href="#">运动鞋</a></span></dd>
+								</dl>
+							</li>
+						</ul><!--sort_nav end-->
+						<div class="f_l sort_pp">
+							<h3>热门品牌</h3>
+							<ul>
+								<li><a href="#">JACKJONES</a><a href="#">九牧王</a><a href="#">七匹狼</a><a href="#">马克华菲</a><a href="#">稻草人</a><a href="#">TONYJEANS</a><a href="#">凡诺</a></li>
+							</ul>
+							<div class="blank10"></div>
+							<h3>新品推荐</h3>
+							<p align="center"><a href="#"><img src="../images/polo.jpg" width="135" height="137" alt="美素活悦弹力系列" /></a></p>
+						</div><!--sort_pp end-->
+					</div><!--sort end-->
+				</div><!--meun_sort end-->	
+			</div><!--sub_floor_4 end-->
+			<div class="menu" id="sub_floor_5">
+				<div class="meun_sort">
+					<div class="sort clearfix">
+						<ul class="f_l sort_nav">
+							<li>
+								<dl>
+									<dt><a href="#">女包 ></a></dt>
+									<dd><span><a href="#">单肩包</a></span><span><a href="#">斜挎包</a></span><span><a href="#">手提包</a></span><span><a href="#">钱包</a></span><span><a href="#">手包</a></span><span><a href="#">胸包</a></span><span><a href="#">手提/斜肩两用包</a></span></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">男包 ></a></dt>
+									<dd><span><a href="#">公文包</a></span><span><a href="#">斜肩包</a></span><span><a href="#">钱包</a></span><span><a href="#">手包</a></span><span><a href="#">手提/斜肩两用包</a></span></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">电脑包 ></a></dt>
+									<dd><span><a href="#">双肩电脑包</a></span><span><a href="#">手提电脑包</a></span><span><a href="#">相机包</a></span></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">旅行包 ></a></dt>
+									<dd><span><a href="#">拉杆箱</a></span><span><a href="#">旅行包</a></span><span><a href="#">双肩包</a></span><span><a href="#">书包</a></span></dd>
+								</dl>
+							</li>
+						</ul><!--sort_nav end-->
+						<div class="f_l sort_pp">
+							<h3>热门品牌</h3>
+							<ul>
+								<li><a href="#">JACKJONES</a><a href="#">九牧王</a><a href="#">七匹狼</a><a href="#">马克华菲</a><a href="#">稻草人</a><a href="#">TONYJEANS</a><a href="#">凡诺</a></li>
+							</ul>
+							<div class="blank10"></div>
+							<h3>新品推荐</h3>
+							<p align="center"><a href="#"><img src="../images/polo.jpg" width="135" height="137" alt="美素活悦弹力系列" /></a></p>
+						</div><!--sort_pp end-->
+					</div><!--sort end-->
+				</div><!--meun_sort end-->	
+			</div><!--sub_floor_5 end-->
+		</div><!--sub_floor_menus end-->
+	</div><!--site-nav end-->
+</div><!--header end-->
+	
+<div class="content container">
+	<div class="breadcrumbs">
+		<a href="../index.html">首页</a><span>></span><a href="index.html">帮助中心</a><span>></span>积分兑换
+	</div><!--breadcrumbs end-->
+	<h2 class="title">帮助中心</h2>
+	<div class="content_main clearfix">
+		<div class="f_l c_l">
+			<dl>
+				<dt>新手指南</dt>
+				<dd><a href="index.html"><span>购物流程</span></a></dd>
+				<dd><a href="account.html"><span>我的麦路客</span></a></dd>
+				<dd><a href="common.html"><span>常见问题</span></a></dd>
+				<dd><a href="../register.html"><span>注册用户</span></a></dd>
+				<dd><a href="../forgot-password.html"><span>找回密码</span></a></dd>
+			</dl>
+			<dl>
+				<dt>订单问题</dt>
+				<dd><a href="order-status.html"><span>订单状态</span></a></dd>
+				<dd><a href="cancel-order.html"><span>取消订单</span></a></dd>
+				<dd><a href="not-order.html"><span>未达订单</span></a></dd>
+			</dl>
+			<dl>
+				<dt>会员积分</dt>
+				<dd><a href="integral-rules.html"><span>积分规则</span></a></dd>
+				<dd><a href="integral.html"><span>积分问题</span></a></dd>
+				<dd><a class="current" href="exchange-integral.html"><span>积分兑换</span></a></dd>
+			</dl>
+			<dl>
+				<dt>如何付款/退款</dt>
+				<dd><a href="payment.html"><span>支付方式</span></a></dd>
+				<dd><a href="wait-pay.html"><span>支付等待</span></a></dd>
+				<dd><a href="pay-issue.html"><span>支付问题</span></a></dd>
+				<dd><a href="refund.html"><span>办理退款</span></a></dd>
+				<dd><a href="invoice-system.html"><span>发票制度</span></a></dd>
+			</dl>
+			<dl>
+				<dt>配送和收费</dt>
+				<dd><a href="time-range.html"><span>配送时间</span></a></dd>
+				<dd><a href="delivery-time.html"><span>送达时间</span></a></dd>
+				<dd><a href="inspection-sign.html"><span>验货与签收</span></a></dd>
+				<dd><a href="express.html"><span>快递配送和收费</span></a></dd>
+				<dd><a href="ems.html"><span>EMS配送和收费</span></a></dd>
+			</dl>
+			<dl>
+				<dt>售后服务</dt>
+				<dd><a href="policy.html"><span>退换货政策</span></a></dd>
+				<dd><a href="apply-goods.html"><span>如何办理退换货</span></a></dd>
+			</dl>
+		</div><!--c_l end-->
+		<div class="f_r c_r">
+			<div class="help_r_t">
+				<dl class="clearfix">
+					<dt>积分兑换</dt>
+				</dl>
+			</div>
+			<div class="help_r_t_m">
+				<dl>					
+					<dt>部分积分兑换</dt>
+					<dd>“现金”&nbsp;+&nbsp;“积分”&nbsp;&nbsp;购买方式，下次购买可累积积分。</dd>
+					<dt>全额积分兑换</dt>
+					<dd>“全额积分”&nbsp;&nbsp;购买方式，下次购买不能累积积分。</dd>
+				</dl>						
+			</div>
+		</div><!--c_r end-->
+	</div>
+	<div class="content_bg mb-10"></div>
+</div><!--content end-->
+
+<div class="footer container">
+	<div class="service">
+		<div class="cat_bg"></div>
+		<div class="help_list clearfix">
+			<dl>
+				<dt>新手指南</dt>
+				<dd><a href="index.html"><span>购物流程</span></a></dd>
+				<dd><a href="account.html"><span>我的麦路客</span></a></dd>
+				<dd><a href="common.html"><span>常见问题</span></a></dd>
+				<dd><a href="../register.html"><span>注册用户</span></a></dd>
+				<dd><a href="../forgot-password.html"><span>找回密码</span></a></dd>
+			</dl>
+			<dl>
+				<dt>订单问题</dt>
+				<dd><a href="order-status.html">订单状态</a></dd>
+				<dd><a href="cancel-order.html">取消订单</a></dd>   
+				<dd><a href="not-order.html">未达订单</a></dd> 
+			</dl>
+			<dl>
+				<dt>会员积分</dt>
+				<dd><a href="integral-rules.html">积分规则</a></dd>
+				<dd><a href="integral.html">积分问题</a></dd> 
+				<dd><a href="exchange-integral.html">积分兑换</a></dd>   
+			</dl>
+			<dl>
+				<dt>如何付款/退款</dt>
+				<dd><a href="payment.html">支付方式</a></dd>
+				<dd><a href="wait-pay.html">支付等待</a></dd>
+				<dd><a href="pay-issue.html">支付问题</a></dd>
+				<dd><a href="refund.html">办理退款</a></dd>
+				<dd><a href="invoice-system.html">发票制度</a></dd>        
+			</dl>
+			<dl>
+				<dt>配送和收费</dt>
+				<dd><a href="time-range.html">配送时间</a></dd> 
+				<dd><a href="delivery-time.html">送达时间</a></dd> 
+				<dd><a href="inspection-sign.html">验货与签收</a></dd> 
+				<dd><a href="express.html">快递配送和收费</a></dd> 
+				<dd><a href="ems.html">EMS配送和收费</a></dd>      
+			</dl>
+			<dl>
+				<dt>售后服务</dt>
+				<dd><a href="policy.html">退换货政策</a></dd>
+				<dd><a href="apply-goods.html">如何办理退换货</a></dd>     
+			</dl>
+		</div>
+	</div><!--service end-->
+	<div class="copyright">
+		<a href="about.html" target="_blank">关于麦路客</a><span>|</span><a href="contact.html" target="_blank">联系麦路客</a><span>|</span><a href="join.html" target="_blank">加入麦路客</a><span>|</span><a href="#" target="_blank">人才招聘</a><span>|</span><a href="#" target="_blank">投诉与建议</a><span>|</span><a href="#" target="_blank">友情链接</a><br />
+		Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2009-2011&nbsp;&nbsp;<a href="http://www.mailuke.com/">www.mailuke.com</a>&nbsp;&nbsp;麦路客商城版权所有<span>|</span><a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备10031526号</a><br />
+		<a href="#" target="_blank"><img src="../images/beian.gif" width="128" height="47" alt="经营性网站备案中心" /></a><a href="#" target="_blank"><img src="../images/trustA.gif" width="119" height="47" alt="A级-信用企业" /></a><a href="#" target="_blank"><img src="../images/alipay.gif" width="123" height="40" alt="支付宝-特约商家" /></a>
+	</div><!--copyright end-->
+</div><!--footer end-->
+
+<!-- plugin -->
+<script type="text/javascript" src="../js/lib.js"></script>
+<!-- online -->
+<script type="text/javascript" src="../js/online.js"></script>  	
+</body>
+</html>
